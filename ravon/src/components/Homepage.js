@@ -58,17 +58,14 @@ const HomePage = () => {
         {/* Right Section */}
         <div className="mt-8 md:w-1/2 md:mt-0">
           <div className="relative">
-            <div className="absolute top-0 right-0 w-40 h-40 bg-orange-100 rounded-full -z-10"></div>
+            <div className="absolute top-0 right-0 w-40 h-40 bg-transparent rounded-full -z-10"></div>
             <img
-              src="../images/8226due1fuu7111.jpg"
-              alt="App Design 1"
-              className="rounded-lg shadow-lg"
-            />
-            <img
-              src="../images/8226due1fuu711.jpg"
-              alt="App Design 2"
-              className="mt-8 ml-8 rounded-lg shadow-lg"
-            />
+                src="/images/original-0e531dc7-783f-4238-a7f5-4f65e466f0c6-Photoroom.png"
+                alt="App Design 1"
+                className="rounded-lg"
+              />
+
+
           </div>
         </div>
       </div>
