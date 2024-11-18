@@ -24,12 +24,11 @@ const AppDevelopmentSection = () => {
 
       {/* Image Section */}
       <div className="relative mb-6">
-        <img
-          src="/images/the-landscape-for-staffing-hr-professionals-is-shifting-4-trends-to-watch-blog-RH-11-04-2024_Large-1x.webp"
-          alt="Business Team"
-          className="rounded-lg"
-          style={{ width: "1500px", height: "500px" }}
-        />
+                <img
+                src="/images/the-landscape-for-staffing-hr-professionals-is-shifting-4-trends-to-watch-blog-RH-11-04-2024_Large-1x.webp"
+                alt="Business Team"
+                className="rounded-lg w-full h-auto md:h-[500px] md:w-[1500px]"
+            />
 
         {/* Stats Section at the corner of the image */}
         <div className="absolute hidden max-w-2xl p-4 bg-green-600 rounded-lg top-96 right-36 md:block">
@@ -82,85 +81,22 @@ const AppDevelopmentSection = () => {
       <div className="text-center">
   {/* Awards Details Section - Responsive Layout */}
   <div className="grid grid-cols-2 gap-4 md:grid-cols-5">
-    {/* Award 1 */}
-    <div className="flex-1 p-3 bg-transparent rounded-lg shadow-md">
-      {/* Image for Award 1 */}
-      <div className="mb-3">
-        <img 
-          src="/images/award-image-1.PNG"  // Actual image path
-          alt="Top App Developer award" 
-          className="w-16 h-16 mx-auto rounded-full"
-        />
+    {["Top App Developer", "Top App Developer", "Top App Developer", "Top App Developer", "Top App Developer"].map((title, idx) => (
+      <div key={idx} className={`flex-1 p-3 bg-transparent rounded-lg shadow-md ${idx === 4 ? 'col-span-2 md:col-span-1 text-center' : ''}`}>
+        {/* Image for Each Award */}
+        <div className="mb-3">
+          <img 
+            src={`/images/award-image-${idx + 1}.PNG`}  // This path assumes images are inside the public/images folder
+            alt={`${title} award`} 
+            className="w-16 h-16 mx-auto rounded-full"  // Adjust image size and rounding
+          />
+        </div>
+        {/* Award Title */}
+        <div className="text-lg font-bold text-black">{title}</div>
+        {/* Description */}
+        <p className="mt-1 text-xs text-gray-600">Genuine Quality</p>
       </div>
-      {/* Award Title */}
-      <div className="text-lg font-bold text-black">Top App Developer</div>
-      {/* Description */}
-      <p className="mt-1 text-xs text-gray-600">Genuine Quality</p>
-    </div>
-
-    {/* Award 2 */}
-    <div className="flex-1 p-3 bg-transparent rounded-lg shadow-md">
-      {/* Image for Award 2 */}
-      <div className="mb-3">
-        <img 
-          src="/images/award-image-2.PNG"  // Actual image path
-          alt="Top App Developer award" 
-          className="w-16 h-16 mx-auto rounded-full"
-        />
-      </div>
-      {/* Award Title */}
-      <div className="text-lg font-bold text-black">Top App Developer</div>
-      {/* Description */}
-      <p className="mt-1 text-xs text-gray-600">Genuine Quality</p>
-    </div>
-
-    {/* Award 3 */}
-    <div className="flex-1 p-3 bg-transparent rounded-lg shadow-md">
-      {/* Image for Award 3 */}
-      <div className="mb-3">
-        <img 
-          src="/images/award-image-3.PNG"  // Actual image path
-          alt="Top App Developer award" 
-          className="w-16 h-16 mx-auto rounded-full"
-        />
-      </div>
-      {/* Award Title */}
-      <div className="text-lg font-bold text-black">Top App Developer</div>
-      {/* Description */}
-      <p className="mt-1 text-xs text-gray-600">Genuine Quality</p>
-    </div>
-
-    {/* Award 4 */}
-    <div className="flex-1 p-3 bg-transparent rounded-lg shadow-md">
-      {/* Image for Award 4 */}
-      <div className="mb-3">
-        <img 
-          src="/images/award-image-4.PNG"  // Actual image path
-          alt="Top App Developer award" 
-          className="w-16 h-16 mx-auto rounded-full"
-        />
-      </div>
-      {/* Award Title */}
-      <div className="text-lg font-bold text-black">Top App Developer</div>
-      {/* Description */}
-      <p className="mt-1 text-xs text-gray-600">Genuine Quality</p>
-    </div>
-
-    {/* Award 5 */}
-    <div className="flex-1 col-span-2 p-3 text-center bg-transparent rounded-lg shadow-md md:col-span-1">
-      {/* Image for Award 5 */}
-      <div className="mb-3">
-        <img 
-          src="/images/award-image-5.PNG"  // Actual image path
-          alt="Top App Developer award" 
-          className="w-16 h-16 mx-auto rounded-full"
-        />
-      </div>
-      {/* Award Title */}
-      <div className="text-lg font-bold text-black">Top App Developer</div>
-      {/* Description */}
-      <p className="mt-1 text-xs text-gray-600">Genuine Quality</p>
-    </div>
+    ))}
   </div>
 </div>
 
