@@ -24,12 +24,11 @@ const AppDevelopmentSection = () => {
 
       {/* Image Section */}
       <div className="relative mb-6">
-        <img
-          src="/images/the-landscape-for-staffing-hr-professionals-is-shifting-4-trends-to-watch-blog-RH-11-04-2024_Large-1x.webp"
-          alt="Business Team"
-          className="rounded-lg"
-          style={{ width: "1500px", height: "500px" }}
-        />
+                <img
+                src="/images/the-landscape-for-staffing-hr-professionals-is-shifting-4-trends-to-watch-blog-RH-11-04-2024_Large-1x.webp"
+                alt="Business Team"
+                className="rounded-lg w-full h-auto md:h-[500px] md:w-[1500px]"
+            />
 
         {/* Stats Section at the corner of the image */}
         <div className="absolute hidden max-w-2xl p-4 bg-green-600 rounded-lg top-96 right-36 md:block">

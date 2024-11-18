@@ -106,19 +106,20 @@ const HomePage = () => {
 
           {/* Right Section */}
           <motion.div
-            className="w-full mt-8 md:w-1/2 md:mt-0"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="relative">
-              <img
-                src="/images/original-0e531dc7-783f-4238-a7f5-4f65e466f0c6-Photoroom.png"
-                alt="App Design 1"
-                className="w-full ml-20 rounded-lg md:w-auto"
-              />
-            </div>
-          </motion.div>
+              className="w-full mt-8 md:w-1/2 md:mt-0"
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <div className="relative flex justify-center">
+                <img
+                  src="/images/original-0e531dc7-783f-4238-a7f5-4f65e466f0c6-Photoroom.png"
+                  alt="App Design 1"
+                  className="w-full rounded-lg md:w-auto"
+                />
+              </div>
+            </motion.div>
+
         </div>
       </div>
 
