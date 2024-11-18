@@ -1,5 +1,5 @@
 import React from 'react';
-import { faUsers, faRocket, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const AppDevelopmentSection = () => {
@@ -86,7 +86,7 @@ const AppDevelopmentSection = () => {
         {/* Image for Each Award */}
         <div className="mb-3">
           <img 
-            src={`/images/award-image-${idx + 1}.PNG`}  // This path assumes images are inside the public/images folder
+            src={`/images/award-image-${idx + 1}.png`}  // Ensure the images are named consistently and lowercase
             alt={`${title} award`} 
             className="w-16 h-16 mx-auto rounded-full"  // Adjust image size and rounding
           />
