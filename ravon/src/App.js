@@ -5,6 +5,7 @@ import Navbar from "./components/NavBar";
 import AppDevelopmentSection from "./components/AppDevelopmentSection";
 import ServicesHomePage from "./components/ServicessHomePage";
 import Portfolio from "./components/Portfolio";
+import ClientSection from "./components/ClientSection"
 
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
         <Route path="/appdev" element={<AppDevelopmentSection />} />
         <Route path="/servicesHomePage" element={<ServicesHomePage />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/clientSection" element={<ClientSection />} />
+
 
       </Routes>
     </Router>

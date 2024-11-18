@@ -7,6 +7,8 @@ import { faAppStore } from '@fortawesome/free-brands-svg-icons';
 import { motion } from "framer-motion";
 import ServicesHomePage from "./ServicessHomePage";
 import Portfolio from "./Portfolio";
+import ClientSection from "./ClientSection"
+
 
 
 const HomePage = () => {
@@ -129,6 +131,7 @@ const HomePage = () => {
       <AppDevelopmentSection />
       <ServicesHomePage/>
       <Portfolio/>
+      <ClientSection/>
     </div>
   );
 };
