@@ -80,7 +80,7 @@ const AppDevelopmentSection = () => {
       {/* Awards Section */}
       <div className="text-center">
   {/* Awards Details Section - Responsive Layout */}
-  <div className="grid grid-cols-2 gap-4 md:grid-cols-5">
+  <div className="grid grid-cols-2 gap-4 mb-24 md:grid-cols-5">
     {["Top App Developer", "Top App Developer", "Top App Developer", "Top App Developer", "Top App Developer"].map((title, idx) => (
       <div key={idx} className={`flex-1 p-3 bg-transparent rounded-lg shadow-md ${idx === 4 ? 'col-span-2 md:col-span-1 text-center' : ''}`}>
         {/* Image for Each Award */}
