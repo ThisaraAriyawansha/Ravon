@@ -6,6 +6,8 @@ import { faUsers, faRocket, faArrowRight } from '@fortawesome/free-solid-svg-ico
 import { faAppStore } from '@fortawesome/free-brands-svg-icons';
 import { motion } from "framer-motion";
 import ServicesHomePage from "./ServicessHomePage";
+import Portfolio from "./Portfolio";
+
 
 const HomePage = () => {
   return (
@@ -126,6 +128,7 @@ const HomePage = () => {
 
       <AppDevelopmentSection />
       <ServicesHomePage/>
+      <Portfolio/>
     </div>
   );
 };
