@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUsers, faRocket, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faAppStore } from '@fortawesome/free-brands-svg-icons';
 import { motion } from "framer-motion";
+import ServicesHomePage from "./ServicessHomePage";
 
 const HomePage = () => {
   return (
@@ -124,6 +125,7 @@ const HomePage = () => {
       </div>
 
       <AppDevelopmentSection />
+      <ServicesHomePage/>
     </div>
   );
 };
