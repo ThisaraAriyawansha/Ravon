@@ -6,6 +6,7 @@ import AppDevelopmentSection from "./components/AppDevelopmentSection";
 import ServicesHomePage from "./components/ServicessHomePage";
 import Portfolio from "./components/Portfolio";
 import ClientSection from "./components/ClientSection"
+import Download from "./components/Download";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/servicesHomePage" element={<ServicesHomePage />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/clientSection" element={<ClientSection />} />
+        <Route path="/download" element={<Download />} />
 
 
       </Routes>
