@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="p-2 bg-white shadow-lg md:p-4">
+    <nav className="p-2 bg-white rounded-lg shadow-lg md:p-4">
       <div className="container flex items-center justify-between mx-auto">
         {/* Logo/Brand Name (Left) */}
         <div className="text-2xl font-bold text-transparent md:text-3xl bg-clip-text bg-gradient-to-r from-green-400 to-green-800" style={{ fontFamily: 'Poppins, sans-serif' }}>
