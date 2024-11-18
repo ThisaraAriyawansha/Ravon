@@ -1,7 +1,6 @@
 import React from 'react';
-import { faUsers, faRocket,faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faUsers, faRocket, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 
 const AppDevelopmentSection = () => {
   return (
@@ -33,7 +32,7 @@ const AppDevelopmentSection = () => {
         />
 
         {/* Stats Section at the corner of the image */}
-        <div className="absolute max-w-2xl p-4 bg-green-600 rounded-lg top-96 right-36">
+        <div className="absolute hidden max-w-2xl p-4 bg-green-600 rounded-lg top-96 right-36 md:block">
           <table className="w-full text-white">
             <tbody>
               <tr>
@@ -49,7 +48,7 @@ const AppDevelopmentSection = () => {
                     <p className="mt-1 text-sm">Enterprise Clients</p>
                   </div>
                 </td>
-                <td className="p-4" rowspan="2">
+                <td className="p-4" rowSpan="2">
                   <div className="text-black rounded-lg">
                     <h3 className="text-3xl font-bold">RAVON</h3>
                   </div>
@@ -74,19 +73,17 @@ const AppDevelopmentSection = () => {
         </div>
       </div>
 
-
       <button className="flex items-center justify-center p-32 px-6 py-2 mb-20 ml-24 mr-10 text-green-800 transition duration-300 border border-green-800 rounded-full hover:bg-green-800 hover:text-white mt-28">
-          Know More Ravon
-          <FontAwesomeIcon icon={faArrowRight} className="ml-2 text-sm" />
-        </button>
-      
+        Know More Ravon
+        <FontAwesomeIcon icon={faArrowRight} className="ml-2 text-sm" />
+      </button>
 
-{/* Awards Section */}
-<div className="text-center ">
-  {/* Awards Details Section - Single Row Alignment */}
-  <div className="flex justify-between gap-4">
+      {/* Awards Section */}
+<div className="text-center">
+  {/* Awards Details Section - Responsive Layout */}
+  <div className="grid grid-cols-2 gap-4 md:grid-cols-5">
     {["Top App Developer", "Top App Developer", "Top App Developer", "Top App Developer", "Top App Developer"].map((title, idx) => (
-      <div key={idx} className="flex-1 p-3 bg-transparent rounded-lg shadow-md">
+      <div key={idx} className={`flex-1 p-3 bg-transparent rounded-lg shadow-md ${idx === 4 ? 'col-span-2 md:col-span-1 text-center' : ''}`}>
         {/* Image for Each Award */}
         <div className="mb-3">
           <img 
@@ -103,8 +100,6 @@ const AppDevelopmentSection = () => {
     ))}
   </div>
 </div>
-
-
 
     </section>
   );
