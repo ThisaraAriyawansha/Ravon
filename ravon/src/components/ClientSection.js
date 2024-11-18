@@ -1,6 +1,7 @@
 import React from "react";
 import { FaApple, FaAndroid, FaReact, FaJava, FaPython } from 'react-icons/fa';
 import { SiFlutter, SiSwift, SiPwa } from 'react-icons/si';
+import { motion } from 'framer-motion';
 
 const ClientSection = () => {
   const technologies = [
@@ -44,61 +45,90 @@ const ClientSection = () => {
       <h2 className="mb-16 text-2xl font-bold text-center text-gray-800">
         Technologies we work with       
       </h2>
-      {/* Technology Section */}
-      <div className="mb-12 text-center">
+
+      {/* Technology Section with Scroll Animation */}
+      <motion.div
+        className="mb-12 text-center"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <div className="grid max-w-4xl grid-cols-4 gap-6 mx-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {technologies.map((tech, index) => (
-            <div
+            <motion.div
               key={index}
               className="flex flex-col items-center p-4 transition bg-gray-200 rounded-lg shadow-md hover:shadow-lg"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
             >
               {tech.icon}
               <p className="mt-2 text-sm font-semibold">{tech.name}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
-      </div>
-
-      {/* Client Logos */}
-      <div className="p-20 mt-20 bg-gray-200">
+      </motion.div>
+<div className="p-20 mt-24 bg-gray-200">
+      {/* Client Logos Section with Scroll Animation */}
+      <motion.div
+        className="bg-gray-200 "
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <div className="mb-12 text-center">
-          <div className="flex flex-wrap justify-center gap-8 sm:flex-col md:flex-row">
+          <div className="flex flex-wrap justify-center gap-4 sm:flex-col md:flex-row">
             {clients.map((client, index) => (
-              <div key={index} className="flex flex-col items-center">
+              <motion.div
+                key={index}
+                className="flex flex-col items-center"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+              >
                 <img 
                   src={client.logo} 
                   alt={client.name} 
                   className="object-contain w-32 h-32"
                 />
                 <p className="mt-2 text-sm font-semibold text-gray-700">{client.name}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
+      </motion.div>
 
-        {/* Testimonial Section */}
-        <div className="max-w-4xl mx-auto text-center">
-          <h3 className="mb-4 text-2xl font-bold">
-            Our clients praise us for our great results
-          </h3>
-          <blockquote className="mb-6 italic text-gray-600">
-            "{testimonial.quote}"
-          </blockquote>
-          <p className="mb-8 text-gray-600">{testimonial.description}</p>
-          <p className="font-semibold text-gray-800">
-            {testimonial.author}, {testimonial.location}
-          </p>
-          <div className="flex justify-center gap-4 mt-8">
-            {testimonial.avatars.map((avatar, index) => (
-              <img
-                key={index}
-                src={avatar}
-                alt={`Avatar ${index}`}
-                className="object-cover w-24 h-16 rounded-lg shadow-md"
-              />
-            ))}
-          </div>
+      {/* Testimonial Section with Scroll Animation */}
+      <motion.div
+        className="max-w-4xl mx-auto text-center "
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <h3 className="mb-4 text-2xl font-bold">
+          Our clients praise us for our great results
+        </h3>
+        <blockquote className="mb-6 italic text-gray-600">
+          "{testimonial.quote}"
+        </blockquote>
+        <p className="mb-8 text-gray-600">{testimonial.description}</p>
+        <p className="font-semibold text-gray-800">
+          {testimonial.author}, {testimonial.location}
+        </p>
+        <div className="flex justify-center gap-4 mt-8">
+          {testimonial.avatars.map((avatar, index) => (
+            <motion.img
+              key={index}
+              src={avatar}
+              alt={`Avatar ${index}`}
+              className="object-cover w-24 h-16 rounded-lg shadow-md"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+            />
+          ))}
         </div>
+      </motion.div>
       </div>
     </div>
   );
