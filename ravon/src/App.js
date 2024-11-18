@@ -4,7 +4,7 @@ import HomePage from "./components/Homepage";
 import Navbar from "./components/NavBar";
 import AppDevelopmentSection from "./components/AppDevelopmentSection";
 import ServicesHomePage from "./components/ServicessHomePage";
-
+import Portfolio from "./components/Portfolio";
 
 
 function App() {
@@ -15,6 +15,7 @@ function App() {
         <Route path="/navbar" element={<Navbar />} />
         <Route path="/appdev" element={<AppDevelopmentSection />} />
         <Route path="/servicesHomePage" element={<ServicesHomePage />} />
+        <Route path="/portfolio" element={<Portfolio />} />
 
       </Routes>
     </Router>

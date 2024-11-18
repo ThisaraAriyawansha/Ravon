@@ -133,8 +133,8 @@ const Services = () => {
           scale: inView ? 1 : 0.9,
         }}
         transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
-      >
-        <div className="flex items-center justify-center space-x-2">
+      > 
+        <div className="flex items-center justify-center space-x-2 p-14">
           <div className="text-base font-bold">Hire World-Class Developers</div>
           <motion.button
             className="px-4 py-2 text-sm font-bold text-white transition bg-green-500 rounded-full hover:bg-green-600"
