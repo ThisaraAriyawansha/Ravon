@@ -75,7 +75,7 @@ const AppDevelopmentSection = () => {
       </div>
 
 
-      <button className="flex items-center justify-center p-32 px-6 py-2 mr-10 text-green-800 transition duration-300 border border-green-800 rounded-full hover:bg-green-800 hover:text-white">
+      <button className="flex items-center justify-center p-32 px-6 py-2 mb-20 ml-24 mr-10 text-green-800 transition duration-300 border border-green-800 rounded-full hover:bg-green-800 hover:text-white mt-28">
           Know More Ravon
           <FontAwesomeIcon icon={faArrowRight} className="ml-2 text-sm" />
         </button>
@@ -96,7 +96,7 @@ const AppDevelopmentSection = () => {
           />
         </div>
         {/* Award Title */}
-        <div className="text-lg font-bold text-green-600">{title}</div>
+        <div className="text-lg font-bold text-black">{title}</div>
         {/* Description */}
         <p className="mt-1 text-xs text-gray-600">Genuine Quality</p>
       </div>
