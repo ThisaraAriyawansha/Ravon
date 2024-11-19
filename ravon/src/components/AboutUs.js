@@ -13,11 +13,11 @@ const AboutUs = () => {
         <div className="container px-6 mx-auto md:px-12">
 
             
-          {/* About Us Section */}
-          <div className="items-center px-8 mb-16 text-center md:flex md:justify-between lg:px-16">
+{/* About Us Section */}
+<div className="items-center gap-12 px-8 mb-16 text-center md:flex md:justify-between lg:px-16"> {/* Added gap-12 */}
   {/* Left Side: Text Content */}
   <motion.div
-    className="mb-8 mr-10 text-center md:w-1/2 md:text-left md:mb-0"
+    className="mb-8 text-center md:w-1/2 md:text-left md:mb-0"
     initial={{ opacity: 0, x: -100 }} 
     animate={{ opacity: 1, x: 0 }} 
     transition={{ duration: 1, ease: 'easeOut' }}
@@ -32,7 +32,7 @@ const AboutUs = () => {
 
   {/* Right Side: Image */}
   <motion.div
-    className="mt-8 md:w-1/2 md:mt-0"
+    className="mt-12 md:w-1/2 md:mt-0" // Increased margin-top here to create more space
     initial={{ opacity: 0, y: 100 }} 
     animate={{ opacity: 1, y: 0 }} 
     transition={{ duration: 1, ease: 'easeOut' }}
@@ -44,6 +44,8 @@ const AboutUs = () => {
     />
   </motion.div>
 </div>
+
+
 
 
 
