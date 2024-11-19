@@ -61,7 +61,7 @@ const Navbar = () => {
         >
           {/* Mobile Menu Links */}
           <a href="/home" className="text-black transition duration-300 hover:text-gray-600">Home</a>
-          <a href="/about" className="text-black transition duration-300 hover:text-gray-600">About</a>
+          <a href="/aboutUs" className="text-black transition duration-300 hover:text-gray-600">About Us</a>
           <a href="/services" className="text-black transition duration-300 hover:text-gray-600">Services</a>
           <a href="/contact" className="text-black transition duration-300 hover:text-gray-600">Contact</a>
 
