@@ -12,6 +12,8 @@ import Stories from "./components/Stories";
 import GetInTouch from "./components/GetInTouch";
 import Location from "./components/Location";
 import AboutUs from "./components/AboutUs";
+import Services from "./components/Services";
+
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
         <Route path="/location" element={<Location />} />
         <Route path="/footer" element={<Footer />} />
         <Route path="/aboutUs" element={<AboutUs />} />
+        <Route path="/services" element={<Services />} />
+
 
 
 
