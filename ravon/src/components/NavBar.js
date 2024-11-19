@@ -60,7 +60,7 @@ const Navbar = () => {
           className="flex flex-col items-center p-4 mt-2 space-y-4 bg-white border border-gray-300 shadow-lg md:hidden rounded-l-xl" // Reduced margin, padding, and width for compactness
         >
           {/* Mobile Menu Links */}
-          <a href="/home" className="text-black transition duration-300 hover:text-gray-600">Home</a>
+          <a href="/" className="text-black transition duration-300 hover:text-gray-600">Home</a>
           <a href="/aboutUs" className="text-black transition duration-300 hover:text-gray-600">About Us</a>
           <a href="/services" className="text-black transition duration-300 hover:text-gray-600">Services</a>
           <a href="/contact" className="text-black transition duration-300 hover:text-gray-600">Contact</a>
