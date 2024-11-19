@@ -29,7 +29,7 @@ const GetInTouch = () => {
                       <div className="max-w-xs p-2 mt-1 bg-white rounded-md">
                         <p className="flex items-center text-sm text-black">
                           <FaPhoneAlt className="mr-2 text-black" />
-                          +94 769417154
+                          +94 76 941 7154
                         </p>
                       </div>
                     </td>
@@ -38,7 +38,7 @@ const GetInTouch = () => {
                       <div className="max-w-xs p-2 mt-1 bg-white rounded-md">
                         <p className="flex items-center text-sm text-black">
                           <FaPhoneAlt className="mr-2 text-black" />
-                          +94 769417154
+                          +94 76 941 7154
                         </p>
                       </div>
                     </td>

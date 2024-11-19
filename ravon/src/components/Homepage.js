@@ -11,6 +11,7 @@ import ClientSection from "./ClientSection";
 import Download from "./Download";
 import Stories from "./Stories";
 import GetInTouch from "./GetInTouch";
+import Location from "./Location";
 
 
 
@@ -140,6 +141,8 @@ const HomePage = () => {
       <Download/>
       <Stories/>
       <GetInTouch/>
+      <Location/>
+      
     </div>
   );
 };
