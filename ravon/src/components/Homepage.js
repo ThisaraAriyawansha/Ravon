@@ -9,6 +9,9 @@ import ServicesHomePage from "./ServicessHomePage";
 import Portfolio from "./Portfolio";
 import ClientSection from "./ClientSection";
 import Download from "./Download";
+import Stories from "./Stories";
+import GetInTouch from "./GetInTouch";
+
 
 
 
@@ -135,6 +138,8 @@ const HomePage = () => {
       <Portfolio/>
       <ClientSection/>
       <Download/>
+      <Stories/>
+      <GetInTouch/>
     </div>
   );
 };
