@@ -12,6 +12,7 @@ import Download from "./Download";
 import Stories from "./Stories";
 import GetInTouch from "./GetInTouch";
 import Location from "./Location";
+import Footer from "./Footer";
 
 
 
@@ -142,6 +143,7 @@ const HomePage = () => {
       <Stories/>
       <GetInTouch/>
       <Location/>
+      <Footer/>
       
     </div>
   );
