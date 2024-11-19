@@ -103,7 +103,13 @@ const ContactUs = () => {
           </LoadScript>
         </div>
 
-
+{/* Map Instruction */}
+<div className="p-8 mt-16 text-center rounded-lg shadow-lg bg-gradient-to-r from-blue-100 to-blue-200 md:p-12">
+  <p className="text-lg font-medium leading-relaxed text-gray-700 md:text-xl">
+    Drag and zoom on the map to explore our office location. For better accuracy, zoom in!
+  </p>
+  <p className="mt-4 text-sm italic text-gray-500 md:text-base">Our office is conveniently located in the heart of Colombo, Sri Lanka.</p>
+</div>
 
 
         {/* Company Contact Information */}
