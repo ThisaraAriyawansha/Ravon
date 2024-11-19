@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from "./components/Homepage";
 import Navbar from "./components/NavBar";
+import Footer from "./components/Footer";
 import AppDevelopmentSection from "./components/AppDevelopmentSection";
 import ServicesHomePage from "./components/ServicessHomePage";
 import Portfolio from "./components/Portfolio";
@@ -10,7 +11,7 @@ import Download from "./components/Download";
 import Stories from "./components/Stories";
 import GetInTouch from "./components/GetInTouch";
 import Location from "./components/Location";
-import Footer from "./components/Footer";
+import AboutUs from "./components/AboutUs";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/getInTouch" element={<GetInTouch />} />
         <Route path="/location" element={<Location />} />
         <Route path="/footer" element={<Footer />} />
+        <Route path="/aboutUs" element={<AboutUs />} />
 
 
 

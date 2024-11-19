@@ -19,8 +19,8 @@ const Navbar = () => {
 
         {/* Navigation Links (Centered) */}
         <div className="items-center justify-center flex-grow hidden space-x-8 md:flex">
-          <a href="/home" className="text-black transition duration-300 hover:text-gray-600">Home</a>
-          <a href="/about" className="text-black transition duration-300 hover:text-gray-600">About</a>
+          <a href="/" className="text-black transition duration-300 hover:text-gray-600">Home</a>
+          <a href="/aboutUs" className="text-black transition duration-300 hover:text-gray-600">About Us</a>
           <a href="/services" className="text-black transition duration-300 hover:text-gray-600">Services</a>
           <a href="/contact" className="text-black transition duration-300 hover:text-gray-600">Contact</a>
         </div>
