@@ -265,14 +265,19 @@ Our Vision
     <p className="max-w-4xl mx-auto mt-4 text-lg text-gray-600 md:text-xl">
       Do you have a project in mind? Contact us to discuss how we can bring your ideas to life with the latest technologies and exceptional design.
     </p>
-    <motion.button
-      className="px-6 py-3 mt-6 text-white bg-green-600 hover:bg-green-700 rounded-xl md:text-lg"
-      initial={{ opacity: 0, y: 50 }} // Start with opacity 0 and translate 50px down
-      whileInView={{ opacity: 1, y: 0 }} // Fade in and move to original position
-      transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }} // Smooth transition for the button
+    <a
+      href="/contact"
+      className="motion-button-wrapper"
     >
-      Contact Us
-    </motion.button>
+      <motion.button
+        className="px-6 py-3 mt-6 text-white bg-green-600 hover:bg-green-700 rounded-xl md:text-lg"
+        initial={{ opacity: 0, y: 50 }} // Start with opacity 0 and translate 50px down
+        whileInView={{ opacity: 1, y: 0 }} // Fade in and move to original position
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }} // Smooth transition for the button
+      >
+        Contact Us
+      </motion.button>
+    </a>
   </motion.div>
 </div>
 
