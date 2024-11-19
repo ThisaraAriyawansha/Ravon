@@ -9,6 +9,7 @@ import ClientSection from "./components/ClientSection"
 import Download from "./components/Download";
 import Stories from "./components/Stories";
 import GetInTouch from "./components/GetInTouch";
+import Location from "./components/Location";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
         <Route path="/download" element={<Download />} />
         <Route path="/stories" element={<Stories />} />
         <Route path="/getInTouch" element={<GetInTouch />} />
+        <Route path="/location" element={<Location />} />
+
 
 
       </Routes>
