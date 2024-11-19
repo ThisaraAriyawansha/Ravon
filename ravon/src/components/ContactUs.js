@@ -158,18 +158,6 @@ const ContactUs = () => {
 </div>
 
 
-          {/* Social Media Links */}
-          <div className="mt-8 space-x-6">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-blue-600">
-              <FaFacebook size={30} />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-blue-400">
-              <FaTwitter size={30} />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-blue-700">
-              <FaLinkedin size={30} />
-            </a>
-          </div>
 
           {/* Business Hours */}
             <div className="p-8 mt-16 rounded-lg shadow-lg bg-gradient-to-r from-green-100 to-green-200 md:p-12">
