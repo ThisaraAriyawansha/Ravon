@@ -232,10 +232,10 @@ const AboutUs = () => {
 {/* Our Vision */}
 <div className="px-6 mt-16 text-center lg:px-16">
   <motion.div
-    initial={{ opacity: 0, y: 50 }} // Start with opacity 0 and translate 50px down
-    whileInView={{ opacity: 1, y: 0 }} // Fade in and move to original position
-    transition={{ duration: 0.8, ease: "easeOut" }} // Smooth transition
-    viewport={{ once: true, amount: 0.5 }} // Trigger animation when 50% of the element is in view
+    initial={{ opacity: 0, y: 50 }} 
+    whileInView={{ opacity: 1, y: 0 }} 
+    transition={{ duration: 0.8, ease: "easeOut" }} 
+    viewport={{ once: true, amount: 0.5 }} 
   >
 <h2 className="mb-4 text-2xl font-bold tracking-tight text-gray-900 md:text-3xl lg:text-4xl">
 Our Vision
@@ -251,10 +251,10 @@ Our Vision
 {/* Contact Section */}
 <div className="mt-16 text-center">
   <motion.div
-    initial={{ opacity: 0, y: 50 }} // Start with opacity 0 and translate 50px down
-    whileInView={{ opacity: 1, y: 0 }} // Fade in and move to original position
-    transition={{ duration: 0.8, ease: "easeOut" }} // Smooth transition
-    viewport={{ once: true, amount: 0.5 }} // Trigger when 50% of the element is in view
+    initial={{ opacity: 0, y: 50 }} 
+    whileInView={{ opacity: 1, y: 0 }} 
+    transition={{ duration: 0.8, ease: "easeOut" }} 
+    viewport={{ once: true, amount: 0.5 }} 
   >
 <a href="#ContactUs">
     <h2 className="mb-4 text-2xl font-bold tracking-tight text-gray-900 md:text-3xl lg:text-4xl">
@@ -271,9 +271,9 @@ Our Vision
     >
       <motion.button
         className="px-6 py-3 mt-6 text-white bg-green-600 hover:bg-green-700 rounded-xl md:text-lg"
-        initial={{ opacity: 0, y: 50 }} // Start with opacity 0 and translate 50px down
-        whileInView={{ opacity: 1, y: 0 }} // Fade in and move to original position
-        transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }} // Smooth transition for the button
+        initial={{ opacity: 0, y: 50 }} 
+        whileInView={{ opacity: 1, y: 0 }} 
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }} 
       >
         Contact Us
       </motion.button>

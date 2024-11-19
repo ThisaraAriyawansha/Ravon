@@ -7,8 +7,8 @@ import { useInView } from "react-intersection-observer";
 
 const Services = () => {
   const { ref, inView } = useInView({
-    triggerOnce: true,  // Trigger the animation only once
-    threshold: 0.2,     // Trigger when 20% of the element is visible
+    triggerOnce: true,  
+    threshold: 0.2,     
   });
 
   const services = [
