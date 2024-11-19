@@ -10,14 +10,14 @@ const locations = [
     address: "123 Colombo Street, Colombo, Western Province, Sri Lanka 10000", // Example address for Sri Lanka
   },
   {
-    name: "Dubai",
-    icon: <Flag code="AE" style={{ width: "30px", height: "20px" }} />,
-    address: "Tom Extension, 1st Block 2nd Cross, Yellow round circle, Jaipur, Rajasthan 123456",
+    name: "Australia",
+    icon: <Flag code="AU" style={{ width: "30px", height: "20px" }} />, // Australia flag
+    address: "Sydney Opera House, Bennelong Point, Sydney, NSW 2000, Australia", // Example address for Australia
   },
   {
     name: "UK",
-    icon: <Flag code="GB" style={{ width: "30px", height: "20px" }} />,
-    address: "Tom Extension, 1st Block 2nd Cross, Yellow round circle, Jaipur, Rajasthan 123456",
+    icon: <Flag code="GB" style={{ width: "30px", height: "20px" }} />, // UK flag
+    address: "10 Downing Street, Westminster, London, SW1A 2AA, United Kingdom", // Example address for the UK
   },
 ];
 
