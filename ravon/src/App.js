@@ -13,6 +13,7 @@ import GetInTouch from "./components/GetInTouch";
 import Location from "./components/Location";
 import AboutUs from "./components/AboutUs";
 import Services from "./components/Services";
+import ContactUs from "./components/ContactUs";
 
 
 function App() {
@@ -32,7 +33,9 @@ function App() {
         <Route path="/footer" element={<Footer />} />
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<ContactUs />} />
 
+        
 
 
 
