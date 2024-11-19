@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { FaPhone, FaEnvelope, FaSkype, FaMapMarkerAlt } from "react-icons/fa";
 import Flag from "react-world-flags";
-import { motion } from "framer-motion";  // Import Framer Motion
+import { motion } from "framer-motion";  
 
 const locations = [
   {
-    name: "Sri Lanka", // Changed from India to Sri Lanka
+    name: "Sri Lanka", 
     icon: <Flag code="LK" style={{ width: "30px", height: "20px" }} />, // Sri Lanka flag
-    address: "123 Colombo Street, Colombo, Western Province, Sri Lanka 10000", // Example address for Sri Lanka
+    address: "123 Colombo Street, Colombo, Western Province, Sri Lanka 10000", 
   },
   {
     name: "Australia",
     icon: <Flag code="AU" style={{ width: "30px", height: "20px" }} />, // Australia flag
-    address: "Sydney Opera House, Bennelong Point, Sydney, NSW 2000, Australia", // Example address for Australia
+    address: "Sydney Opera House, Bennelong Point, Sydney, NSW 2000, Australia", 
   },
   {
     name: "UK",
     icon: <Flag code="GB" style={{ width: "30px", height: "20px" }} />, // UK flag
-    address: "10 Downing Street, Westminster, London, SW1A 2AA, United Kingdom", // Example address for the UK
+    address: "10 Downing Street, Westminster, London, SW1A 2AA, United Kingdom", 
   },
 ];
 
@@ -57,12 +57,12 @@ const LocationCard = () => {
           key={index}
           id={`location-card-${index}`}
           className="w-full max-w-sm p-4 text-left sm:w-1/3"
-          initial={{ opacity: 0, y: 50 }} // Start with invisible and below
+          initial={{ opacity: 0, y: 50 }} 
           animate={{
             opacity: inView[index] ? 1 : 0,
-            y: inView[index] ? 0 : 50, // Move up when in view
+            y: inView[index] ? 0 : 50, 
           }}
-          transition={{ duration: 0.8, delay: index * 0.2 }} // Delay animations for each location
+          transition={{ duration: 0.8, delay: index * 0.2 }} 
         >
           <div className="flex items-center mb-3">
             <div className="mr-2 text-3xl">{location.icon}</div>

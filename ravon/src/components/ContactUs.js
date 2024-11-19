@@ -6,10 +6,7 @@ import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import { FaFacebook, FaTwitter, FaLinkedin, FaPhoneAlt } from 'react-icons/fa';
 
 const ContactUs = () => {
-  // Replace with your own Google Maps API key
-  const googleMapsApiKey = "AIzaSyCKMNZbr0Io8Cnnxm7XJo6u5l7MppdWNhI"; // Add your API key here
-
-  // Google Map center position (latitude and longitude for Ravon's office)
+  const googleMapsApiKey = "AIzaSyCKMNZbr0Io8Cnnxm7XJo6u5l7MppdWNhI"; 
   const center = {
     lat: 6.9271, // Latitude for Sri Lanka (example, change it to your office location)
     lng: 79.8612 // Longitude for Sri Lanka (example, change it to your office location)
