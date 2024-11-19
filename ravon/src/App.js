@@ -7,7 +7,8 @@ import ServicesHomePage from "./components/ServicessHomePage";
 import Portfolio from "./components/Portfolio";
 import ClientSection from "./components/ClientSection"
 import Download from "./components/Download";
-
+import Stories from "./components/Stories";
+import GetInTouch from "./components/GetInTouch";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/clientSection" element={<ClientSection />} />
         <Route path="/download" element={<Download />} />
+        <Route path="/stories" element={<Stories />} />
+        <Route path="/getInTouch" element={<GetInTouch />} />
 
 
       </Routes>
