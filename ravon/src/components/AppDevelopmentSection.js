@@ -86,9 +86,9 @@ const AppDevelopmentSection = () => {
         {/* Image for Each Award */}
         <div className="mb-3">
           <img 
-            src={`/images/award-image-${idx + 1}.png`}  // Ensure the images are named consistently and lowercase
+            src={`/images/award-image-${idx + 1}.png`}  
             alt={`${title} award`} 
-            className="w-16 h-16 mx-auto rounded-full"  // Adjust image size and rounding
+            className="w-16 h-16 mx-auto rounded-full" 
           />
         </div>
         {/* Award Title */}

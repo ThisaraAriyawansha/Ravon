@@ -32,13 +32,13 @@ const AboutUs = () => {
 
   {/* Right Side: Image */}
   <motion.div
-    className="mt-12 md:w-1/2 md:mt-0" // Increased margin-top here to create more space
+    className="mt-12 md:w-1/2 md:mt-0" 
     initial={{ opacity: 0, y: 100 }} 
     animate={{ opacity: 1, y: 0 }} 
     transition={{ duration: 1, ease: 'easeOut' }}
   >
     <img
-      src="https://softgalaxy.ro/images/slides/applications-development.jpg" // Replace with your image URL
+      src="https://softgalaxy.ro/images/slides/applications-development.jpg" 
       alt="About Ravon"
       className="object-cover w-full transition-all duration-700 ease-out transform rounded-lg shadow-xl hover:scale-105 hover:shadow-2xl"
     />
@@ -55,14 +55,14 @@ const AboutUs = () => {
                 {/* Left Side: Image */}
                 <motion.div
                     className="mb-8 md:w-1/2 md:mb-0"
-                    initial={{ opacity: 0, x: -100 }} // Initial state: hidden and off-screen
-                    animate={{ opacity: 1, x: 0 }} // Final state: fully visible and in position
-                    transition={{ duration: 1, ease: 'easeOut' }} // Animation duration and easing
-                    whileInView={{ opacity: 1, x: 0 }} // Triggers when the element comes into view
-                    viewport={{ once: true }} // Triggers animation only once when the element comes into view
+                    initial={{ opacity: 0, x: -100 }} 
+                    animate={{ opacity: 1, x: 0 }} 
+                    transition={{ duration: 1, ease: 'easeOut' }} 
+                    whileInView={{ opacity: 1, x: 0 }} 
+                    viewport={{ once: true }} 
                 >
                     <img
-                    src="https://acropolium.com/img/articles/reduce-software-development-costs/img04.jpg" // Replace with your image URL
+                    src="https://acropolium.com/img/articles/reduce-software-development-costs/img04.jpg" 
                     alt="Our Mission"
                     className="object-cover w-full h-full transition-transform duration-500 transform shadow-xl rounded-xl hover:scale-105"
                     />
@@ -71,11 +71,11 @@ const AboutUs = () => {
                 {/* Right Side: Content */}
                 <motion.div
                     className="ml-0 text-center md:ml-20 md:w-1/2 md:text-left"
-                    initial={{ opacity: 0, x: 100 }} // Initial state: hidden and off-screen
-                    animate={{ opacity: 1, x: 0 }} // Final state: fully visible and in position
-                    transition={{ duration: 1, ease: 'easeOut' }} // Animation duration and easing
-                    whileInView={{ opacity: 1, x: 0 }} // Triggers when the element comes into view
-                    viewport={{ once: true }} // Triggers animation only once when the element comes into view
+                    initial={{ opacity: 0, x: 100 }} 
+                    animate={{ opacity: 1, x: 0 }} 
+                    transition={{ duration: 1, ease: 'easeOut' }} 
+                    whileInView={{ opacity: 1, x: 0 }} 
+                    viewport={{ once: true }} 
                 >
                     <h2 className="mb-4 text-4xl font-extrabold leading-tight text-gray-900">
                     Our Mission
