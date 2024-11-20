@@ -8,8 +8,8 @@ import { FaFacebook, FaTwitter, FaLinkedin, FaPhoneAlt } from 'react-icons/fa';
 const ContactUs = () => {
   const googleMapsApiKey = "AIzaSyCKMNZbr0Io8Cnnxm7XJo6u5l7MppdWNhI"; 
   const center = {
-    lat: 6.9271, // Latitude for Sri Lanka (example, change it to your office location)
-    lng: 79.8612 // Longitude for Sri Lanka (example, change it to your office location)
+    lat: 6.9271, 
+    lng: 79.8612 
   };
 
   return (

@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion'; // Import Framer Motion
-import HamburgerMenu from 'react-hamburger-menu'; // Import react-hamburger-menu
+import { motion } from 'framer-motion'; 
+import HamburgerMenu from 'react-hamburger-menu'; 
 
 const Navbar = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
-  // Toggle sidebar visibility
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
   };
 
-  // Close sidebar when clicking outside
   const closeSidebar = () => {
     setSidebarOpen(false);
   };
@@ -41,11 +39,11 @@ const Navbar = () => {
           <HamburgerMenu
             isOpen={isSidebarOpen}
             menuClicked={toggleSidebar}
-            width={35} // Increased width for easier tap
-            height={25} // Increased height for easier tap
-            strokeWidth={4} // Thicker stroke for visibility
+            width={35} 
+            height={25} 
+            strokeWidth={4} 
             rotate={0}
-            color="#006400" // Dark Green Color for Hamburger Icon
+            color="#006400" 
             borderRadius={0}
             animationDuration={0.3}
           />
@@ -84,8 +82,8 @@ const Navbar = () => {
       {/* Overlay when Sidebar is open */}
       {isSidebarOpen && (
         <div
-          className="fixed inset-0 z-40 bg-black opacity-60" // Darker overlay for better focus
-          onClick={closeSidebar} // Close sidebar when clicking outside
+          className="fixed inset-0 z-40 bg-black opacity-60" 
+          onClick={closeSidebar} 
         />
       )}
     </nav>
